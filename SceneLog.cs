@@ -82,7 +82,6 @@ namespace DebugMod
                     else
                     {
                         int childIndex = _activeGameObjects.FindIndex(x => x.gameObject == child);
-                        CLog.Info($"childIndex = {childIndex}");
                         if (childIndex == -1)
                             CLog.Warning($"Child {j} (\"{child.name}\") of {obj.name} doesn't exist?");
                         else
